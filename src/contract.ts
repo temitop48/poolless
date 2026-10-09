@@ -14,7 +14,7 @@
  * V2: 0x9ee4eef66b60937e6ec697c7904fcc2475ce9e03
  */
 
-import v2Artifact from '../contracts/out/PoollessV2.sol/PoollessV2.json'
+import v2Artifact from '../contracts/contract-metadata/PoollessV2.json'
 import { getUsdc, requireChain } from '@/onchain-facts'
 
 // Active network
