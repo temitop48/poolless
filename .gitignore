@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite cache
+.vite/
+
+# Foundry build artifacts (keep source, exclude compiled output)
+contracts/out/
+contracts/cache/
+
+# Environment — contains secrets (CIRCLE_API_KEY etc.)
+.env
+.env.local
+.env.*.local
+
+# Circle recovery file — contains entity secret, must never be committed
+.circle/
+
+# Bun lockfile binary cache
+.bun/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+/tmp/
+
+# Local development backups
+backups/
+
+# Foundry deployment broadcasts (review before publishing separately)
+broadcast/
+
+# Local agent configuration
+.agents/
+
+# Local diagnostic output
+console.jsonl
+traces.jsonl
+
+# Additional environment and secret files
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Historical local deployment instructions
+AGENTS.md
