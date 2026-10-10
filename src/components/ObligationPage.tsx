@@ -736,6 +736,11 @@ function ActionZone({
   onClaimRefund: () => void
   onOpenConnectModal: () => void
 }) {
+  // A settled obligation is complete and can be viewed without a wallet.
+  if (status === ObligationStatus.SETTLED) {
+    return null
+  }
+
   if (!isConnected) {
     return (
       <button
@@ -758,11 +763,6 @@ function ActionZone({
         Switch to Arc Mainnet
       </button>
     )
-  }
-
-  // Settled — nothing to do
-  if (status === ObligationStatus.SETTLED) {
-    return null
   }
 
   // Expired — four distinct cases

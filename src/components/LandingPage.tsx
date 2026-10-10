@@ -273,6 +273,71 @@ export default function LandingPage({ onCreateClick, onObligationOpen }: Landing
             </div>
           </div>
         )}
+        {/* Public Arc Mainnet settlement demonstration */}
+        <section
+          className="mt-12 rounded-3xl p-6 sm:p-8"
+          style={{
+            background: 'var(--surface-strong)',
+            border: '1px solid var(--border)',
+          }}
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <div>
+              <div
+                className="text-xs font-semibold uppercase tracking-widest mb-3"
+                style={{ color: 'var(--accent)' }}
+              >
+                Verified on Arc Mainnet
+              </div>
+
+              <h2
+                className="display text-2xl font-bold mb-3"
+                style={{ color: 'var(--ink)' }}
+              >
+                Two contributors. One obligation. Settled automatically.
+              </h2>
+
+              <p
+                className="text-sm mb-4"
+                style={{ color: 'var(--muted)' }}
+              >
+                Explore a real USDC payment completed through POOLLESS.
+                No wallet connection required.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {[
+                  '2 contributors',
+                  '0.002 USDC settled',
+                  'Arc Mainnet',
+                  'Settled',
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="text-xs font-medium px-3 py-1.5 rounded-full"
+                    style={{
+                      background: 'var(--surface-muted)',
+                      color: 'var(--ink-2)',
+                      border: '1px solid var(--border)',
+                    }}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => onObligationOpen(1n)}
+              className="shrink-0 flex items-center justify-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold text-white transition-all hover:scale-[1.01] active:scale-[0.99]"
+              style={{ background: 'var(--accent)' }}
+            >
+              Explore Live Settlement
+              <ArrowRight size={16} />
+            </button>
+          </div>
+        </section>
       </main>
     </div>
   )
