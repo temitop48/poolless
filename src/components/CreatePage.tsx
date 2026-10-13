@@ -170,6 +170,12 @@ export default function CreatePage({ onBack, onCreated }: CreatePageProps) {
         >
           <ArrowLeft size={18} />
         </button>
+        <img
+          src="/poolless-logo.png"
+          alt=""
+          aria-hidden="true"
+          className="size-7 rounded-lg object-contain shrink-0"
+        />
         <span className="display font-bold text-base" style={{ color: 'var(--ink)', letterSpacing: '-0.02em' }}>
           New obligation
         </span>

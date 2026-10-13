@@ -339,6 +339,12 @@ export default function ObligationPage({ obligationId, onBack }: ObligationPageP
         >
           <ArrowLeft size={18} />
         </button>
+        <img
+          src="/poolless-logo.png"
+          alt=""
+          aria-hidden="true"
+          className="size-7 rounded-lg object-contain shrink-0"
+        />
         <div className="flex-1 min-w-0">
           <p className="text-xs font-semibold uppercase" style={{ color: 'var(--subtle)', letterSpacing: '0.07em' }}>
             Obligation #{obligationId.toString()}

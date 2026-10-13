@@ -51,12 +51,20 @@ export default function LandingPage({ onCreateClick, onObligationOpen }: Landing
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between gap-4">
 
           {/* Logo */}
-          <span
-            className="display text-xl font-bold shrink-0"
-            style={{ color: 'var(--ink)', letterSpacing: '-0.04em' }}
-          >
-            POOLLESS
-          </span>
+          <div className="flex items-center gap-2 shrink-0">
+            <img
+              src="/poolless-logo.png"
+              alt=""
+              aria-hidden="true"
+              className="size-7 rounded-lg object-contain"
+            />
+            <span
+              className="display text-xl font-bold"
+              style={{ color: 'var(--ink)', letterSpacing: '-0.04em' }}
+            >
+              POOLLESS
+            </span>
+          </div>
 
           {/* Right side */}
           <div className="flex items-center gap-2">
